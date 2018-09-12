@@ -7,9 +7,7 @@ import com.crud.tasks.service.SimpleEmailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-import sun.plugin2.message.Message;
 
-import java.text.MessageFormat;
 
 @Component
 public class EmailScheduler {

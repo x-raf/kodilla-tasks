@@ -23,8 +23,8 @@ public class EmailScheduler {
     @Autowired
     private AdminConfig adminConfig;
 
-    @Scheduled(fixedDelay = 10000)
-    //@Scheduled(cron = "0 0 7 * * ?")
+    //@Scheduled(fixedDelay = 10000)
+    @Scheduled(cron = "0 0 7 * * ?")
     public void sendInformationEmail() {
         long size = taskRepository.count();
         String infoMessage = "Currently in database you have "+ size + ((size == 1) ? " task." : " tasks.");
